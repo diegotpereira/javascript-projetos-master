@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primaria-color: #000;
+    --secundaria-color: #fff;
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+
+html.escuro {
+    --primaria-color: #fff;
+    --secundaria-color: #333;
+}
+
+html.escuro {
+    background-color: #111;
+    color: var(--primaria-color);
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.toggle {
+    cursor: pointer;
+    background-color: var(--primaria-color);
+    color: var(--secundaria-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 100px;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.relogio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.relogio {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.ponto {
+    background-color: var(--primaria-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.ponto.hora {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.ponto.minuto {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.ponto.segundo {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+}
+
+.central-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.central-point::after {
+    content: '';
+    background-color: var(--primaria-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.tempo {
+    font-size: 60px;
+}
+
+.data {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.data .circulo {
+    background-color: var(--primaria-color);
+    color: var(--secundaria-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+}
