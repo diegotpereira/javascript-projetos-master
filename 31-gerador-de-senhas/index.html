@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gerador de senhas</h2>
+
+        <div class="resultado-container">
+            <span id="resultado"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="configuracoes">
+            <div class="configuracao">
+                <label for="">Comprimento da senha</label>
+                <input type="number" name="" id="comprimento" min="4" max="20" value="20">
+            </div>
+            <div class="configuracao">
+                <label for="">Incluir letras maiúsculas</label>
+                <input type="checkbox" name="" id="maiusculas" checked>
+            </div>
+            <div class="configuracao">
+                <label for="">Incluir letras minúsculas</label>
+                <input type="checkbox" name="" id="minusculas" checked>
+            </div>
+
+            <div class="configuracao">
+                <label for="">Incluir números</label>
+                <input type="checkbox" name="" id="numeros" checked>
+            </div>
+
+            <div class="configuracao">
+                <label for="">Incluir símbolos</label>
+                <input type="checkbox" name="" id="simbolos" checked>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="gerador">
+            Gerar senha
+        </button>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
