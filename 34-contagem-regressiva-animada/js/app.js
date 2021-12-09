@@ -21,14 +21,14 @@ function rodarAnimacao() {
     numeros.forEach((numero, index) => {
         const penultimo = numeros.length - 1
 
-        numero.addEventListener('animacaoFinal', (e) => {
+        numero.addEventListener('animationend', (e) => {
 
-            if (e.animationNome === 'entre' && index !== penultimo) {
+            if (e.animationName === 'irPara' && index !== penultimo) {
 
                 numero.classList.remove('in')
                 numero.classList.add('out')
 
-            } else if (e.animationNome === 'sair' && numero.nextElementSibling) {
+            } else if (e.animationName === 'voltarPara' && numero.nextElementSibling) {
                 numero.nextElementSibling.classList.add('in')
 
             } else {

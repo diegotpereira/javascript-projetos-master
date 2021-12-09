@@ -82,14 +82,14 @@ h4 {
 
 .numeros span.in {
     transform: translate(-50%, -50%) rotate(0deg);
-    animation: entre 0.5s ease-in-out;
+    animation: irPara 0.5s ease-in-out;
 }
 
 .numeros span.out {
-    animation: sair 0.5s ease-in-out;
+    animation: voltarPara 0.5s ease-in-out;
 }
 
-@keyframes entre {
+@keyframes irPara {
     0% {
         transform: translate(-50%, -50%) rotate(120deg);
     }
@@ -104,7 +104,7 @@ h4 {
     }
 }
 
-@keyframes sair {
+@keyframes voltarPara {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
