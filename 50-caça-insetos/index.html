@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de caça insetos</title>
+
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="tela">
+        <h1>Jogo de caça inseto</h1>
+        <button class="btn" id="iniciar-btn">Iniciar o jogo</button>
+    </div>
+    <div class="tela">
+        <h1>Qual é o seu inseto "favorito"?</h1>
+        <ul class="insetos-lista">
+            <li>
+                <button class="escolha-inseto-btn">
+                    <p>Mosca</p>
+                    <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="mosca">
+                </button>
+            </li>
+
+            <li>
+                <button class="escolha-inseto-btn">
+                    <p>Mosquito</p>
+                    <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+
+            <li>
+                <button class="escolha-inseto-btn">
+                    <p>Aranha</p>
+                    <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="aranha">
+                </button>
+            </li>
+
+            <li>
+                <button class="escolha-inseto-btn">
+                    <p>Barata</p>
+                    <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="barata">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tela jogo-container" id="jogo-container">
+        <h3 id="tempo" class="tempo">Tempo: 00:00</h3>
+        <h3 id="pontuacao" class="pontuacao">Pontuação: 0</h3>
+        <h5 id="mensagem" class="mensagem">
+            Você já está brabo? <br> Você está jogando uma partida incrível!!
+        </h5>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
